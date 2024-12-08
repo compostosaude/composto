@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composto Emagrecedor de Ervas</title>
+    <style>
+        /* Estilos anteriores permanecem */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://s11.aconvert.com/convert/p3r68-cdx67/6eh7n-zkh94.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #929090;
+            transition: background 0.5s ease;
+        }
+
+        header {
+            background-color: rgba(122, 126, 122, 0.9);
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            background-color: rgba(51, 51, 51, 0.9);
+            overflow: hidden;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 14px 20px;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            font-size: 20px;
+            color: white;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card img:hover {
+            transform: scale(1.1);
+        }
+
+        .product-card button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background: rgba(51, 51, 51, 0.9);
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .order-form input, .order-form select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .order-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .order-form button:hover {
+            background-color: #45a049;
+        }
+
+        .product-description {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .product-description h4 {
+            font-size: 18px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Saúde & Forma</h1>
+        <p>Os melhores remédios para ajudar no seu emagrecimento!</p>
+    </header>
+    <nav>
+        <div class="social-links">
+            <a href="https://wa.me/5598987654321" target="_blank">📱</a>
+            <a href="https://www.instagram.com" target="_blank">📸</a>
+            <a href="https://www.tiktok.com" target="_blank">🎵</a>
+        </div>
+        <div>
+            <a href="#produtos">Produtos</a>
+            <a href="#pedido">Pedido</a>
+            <a href="#feedback">Feedback</a>
+        </div>
+    </nav>
+
+    <div class="container" id="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="products">
+            <!-- Produto 1 -->
+            <div class="product-card" id="produto1">
+                <!-- Certifique-se de que a URL da imagem é válida e acessível -->
+                <img id="imagem-produto1" src="https://s11.aconvert.com/convert/p3r68-cdx67/6eh7n-zkh94.jpg" alt="Composto Emagrecedor A">
+                <h3 id="nome-produto1">Composto Emagrecedor A</h3>
+                <p id="preco-produto1">R$ 299,99</p>
+                <button onclick="mostrarCadastro('Composto Emagrecedor A')">Comprar Agora</button>
+                <div class="product-description">
+                    <h4>Descrição:</h4>
+                    <p>Composto 100% natural com ervas como chá verde, gengibre e cúrcuma, promovendo emagrecimento rápido e saudável.</p>
+                    <h4>Ingredientes:</h4>
+                    <p>Chá verde, gengibre, cúrcuma, canela, pimenta caiena.</p>
+                    <h4>Como tomar:</h4>
+                    <p>Tomar 1 cápsula pela manhã, 30 minutos antes do café da manhã. Não exceder a dose recomendada.</p>
+                    <h4>Contraindicações:</h4>
+                    <p>Não recomendado para gestantes, lactantes e pessoas com hipertensão ou problemas cardíacos.</p>
+                </div>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="product-card" id="produto2">
+                <!-- Certifique-se de que a URL da imagem é válida e acessível -->
+                <img id="imagem-produto2" src="https://s11.aconvert.com/convert/p3r68-cdx67/6eh7n-zkh94.jpg" alt="Composto Emagrecedor B">
+                <h3 id="nome-produto2">Composto Emagrecedor B</h3>
+                <p id="preco-produto2">R$ 299,99</p>
+                <button onclick="mostrarCadastro('Composto Emagrecedor B')">Comprar Agora</button>
+                <div class="product-description">
+                    <h4>Descrição:</h4>
+                    <p>Composto avançado para emagrecimento com ingredientes como chá verde, garcinia cambogia e l-carnitina.</p>
+                    <h4>Ingredientes:</h4>
+                    <p>Chá verde, garcinia cambogia, l-carnitina, cafeína, piperina.</p>
+                    <h4>Como tomar:</h4>
+                    <p>Tomar 2 cápsulas ao dia, preferencialmente antes das refeições.</p>
+                    <h4>Contraindicações:</h4>
+                    <p>Não recomendado para pessoas com problemas cardíacos ou sensibilidade à cafeína.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulário de Pedido (Cadastro do Cliente) -->
+    <div class="container" id="pedido">
+        <h2>Complete seu Cadastro</h2>
+        <form class="order-form" id="formCadastro" onsubmit="finalizarCadastro(event)">
+            <input type="text" id="nome" placeholder="Seu Nome" required>
+            <input type="text" id="whatsapp" placeholder="Número do WhatsApp" required>
+            <input type="text" id="cep" placeholder="Seu CEP" required>
+            <p>Frete: R$ 9,99</p>
+            <h3>Escolha a Forma de Pagamento</h3>
+            <select id="pagamento" required>
+                <option value="pix">PIX</option>
+                <option value="cartao">Cartão de Crédito</option>
+                <option value="boleto">Boleto Bancário</option>
+            </select>
+            <button type="submit">Finalizar Cadastro</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Saúde & Forma. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function mostrarCadastro(produto) {
+            // Exibe a seção de cadastro
+            document.getElementById("pedido").style.display = "block";
+            // A partir daqui, você pode adicionar uma lógica para mostrar o nome do produto no formulário
+        }
+
+        function finalizarCadastro(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById('nome').value;
+            const whatsapp = document.getElementById('whatsapp').value;
+            const cep = document.getElementById('cep').value;
+            const pagamento = document.getElementById('pagamento').value;
+
+            // Formatação da mensagem para enviar no WhatsApp
+            const mensagem = `Cadastro: \nNome: ${nome}\nWhatsApp: ${whatsapp}\nCEP: ${cep}\nPagamento: ${pagamento}\nFrete: R$ 9,99`;
+
+            const whatsappURL = `https://wa.me/5598987654321?text=${encodeURIComponent(mensagem)}`;
+
+            // Redireciona para o WhatsApp
+            window.location.href = whatsappURL;
+        }
+
+        // Função para atualizar valores e imagens dos produtos
+        function atualizarProduto(id, nome, preco, imagem) {
+            document.getElementById(`nome-produto${id}`).innerText = nome;
+            document.getElementById(`preco-produto${id}`).innerText = preco;
+            document.getElementById(`imagem-produto${id}`).src = imagem;
+        }
+    </script>
+</body>
+</html>
